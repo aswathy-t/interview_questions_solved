@@ -1,16 +1,25 @@
 
 
+/******************************************************************************
+
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include<stdio.h>
+#include<string.h>
 #include<stdlib.h>
 int main()
 {
     char* ptr=(char*)malloc(4*sizeof(char));
-     for(int i=4;i>0;i--)
+     for(int i=0;i<4;i++)
     {
         scanf("%c",ptr+i);
     }
     
-    for(int i=4;i>0;i--)
+    for(int i=3;i>=0;i--)
     {
         printf("%c",*(ptr+i));
     }
